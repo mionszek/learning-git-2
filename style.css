@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.clearfix:after,
+.clearfix:before {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+[class*='col-'] {
+	float: left;
+	Min-height: 1px;
+}
+
+.container {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+body {
+	margin: 0;
+	font-family: "Open Sans";
+	text-align: center;
+}
+
+
+
+header {
+	width: 100%;
+	background: #313234;
+}
+
+header nav img {
+	float: left;
+}
+
+header nav ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+header nav ul li {
+	float: right;
+	padding: 5px 10px;
+}
+
+header nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	color: #00C7E8;
+}
+
+section.hero {
+	height: 200px;
+	background: url('http://naturalnie.media.pl/test/laptop-big.jpg');
+	background-size: cover;
+	background-position: 50%;
+}
+
+section.hero .slogan {
+	float: right;
+	height: 60px;
+	margin-top: 50px;
+	background: rgba(0,0,0,0.5);
+	padding: 10px 50px 10px 10px;
+}
+
+section.hero .slogan h1 {
+	color: #fff;
+	margin: 0;
+}
+
+section.hero .slogan h1:first-child {
+	font-weight: 100;
+}
+
+section.benefits .item {
+	text-align: center;
+}
+
+section.benefits .item div.icon {
+	display: block;
+	width: 75px;
+	height: 75px;
+	background: #313332;
+	border-radius: 15%;
+	color: #FFF;
+	margin: 50px auto 10px auto;
+	padding-top: 5px;
+}
+
+section.benefits .item:hover div.icon {
+	background: #00C7E8;
+}
+
+section.benefits .item:hover h3 {
+	color: #00C7E8;
+}
+
+section.featured-works {
+	text-align: center;
+}
+
+section.gallery .photo-container {
+	position: relative;
+}
+
+section.gallery .photo-container img {
+	width: 100%;
+	display: block;
+}
+
+section.gallery .photo-container .layer {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+}
+
+section.gallery .photo-container:hover .layer {
+	display: block;
+}
+
+section.gallery .photo-container .layer .icon-container {
+    position: absolute;
+    width: 80px;
+    height: 16px;
+    left: calc(50% - 40px);
+    top: calc(50% - 8px);
+}
+
+section.gallery .photo-container .layer .icon-container .icon-link, 
+section.gallery .photo-container .layer .icon-container .icon-search {
+	color: rgba(0,0,0,0.5);
+	background: #fff;
+	border-radius: 10%;
+	margin: 0 10px;
+}
+
+section.team {
+	margin: 50px auto;
+}
+
+section.team h3 {
+	text-align: center;
+}
+
+section.team .person-container {
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 160px;
+	height: 160px;
+    margin: auto;
+}
+
+section.team .person-container img {
+	width: 100%;
+	height: 160px; /* lepiej znaleźć kwadratowe zdjęcie */
+	display: block;
+}
+
+section.team .person-container .layer {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+}
+
+section.team .person-container:hover .layer {
+	display: block;
+}
+
+section.team .person-container .layer .desc-container {
+	color: #fff;
+    position: absolute;
+    width: 70px;
+    height: 16px;
+    left: calc(50% - 35px);
+    top: calc(50% - 8px);
+}
+
+section.tablet-section {
+	background: rgba(0,0,0,0.5);
+	padding-top: 40px;
+	color: #fff;
+}
+
+section.tablet-section .tablet {
+	width: 80%;
+	text-align: center;
+}
+
+section.statistic {
+	text-align: center;
+}
+
+section.statistic .number-container {
+	font-size: 40px;
+	font-family: "Luckiest Guy";
+	margin-top: 40px;
+}
+
+section.statistic h4 {
+	color: #00C7E8;
+}
+
+footer {
+	background: #313332;
+	color: #fff;
+}
+
+footer .about-us,
+footer .address,
+footer .social {
+	position: relative;
+}
+
+footer h3:after {
+	content: '';
+    display: block;
+    width: 80px;
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    left: 140px;
+    top: 30px;
+}
+
+footer .about-us h3:after {
+	left: 100px;
+}
+
+footer .address .item {
+	margin-bottom: 20px;
+}
+
+footer .social .icons {
+	margin-top: 20px;
+}
+
+footer .social .icons .icon-social {
+	margin-right: 10px;
+	background: #00C7E8;
+	padding: 3px;
+}
+
+section.down-footer {
+	width: 100%;
+	background: #252726;
+	color: #fff;
+	text-align: center;
+}
